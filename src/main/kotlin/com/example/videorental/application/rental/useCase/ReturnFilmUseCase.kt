@@ -24,6 +24,8 @@ class ReturnFilmUseCase(
 
         customer.getBonusPoints(film.typeFilm)
 
+        film.returnFilm()
+
         return rental
     }
 }
