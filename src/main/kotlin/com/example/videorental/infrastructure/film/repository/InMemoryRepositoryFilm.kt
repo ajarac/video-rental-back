@@ -21,4 +21,9 @@ class InMemoryRepositoryFilm : RepositoryFilm {
     override fun getFilmByFilmId(filmId: TypeId): Film {
         return listFilm.find { it.filmId.equals(filmId) } ?: throw ItemNotFoundException("Film not found with filmId: $filmId")
     }
+
+    override fun updateFilm(film: Film) {
+        listFilm.removeIf { it.filmId.equals(film.filmId) }
+        listFilm.add(film)
+    }
 }

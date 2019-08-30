@@ -18,4 +18,9 @@ class InMemoryRepositoryRental: RepositoryRental {
     override fun getRentalByRentalId(rentalId: TypeId): Rental {
         return listRental.find { it.rentalId.equals(rentalId) } ?: throw ItemNotFoundException("Rental not found with rental id: $rentalId")
     }
+
+    override fun updateRental(rental: Rental) {
+        listRental.removeIf { it.rentalId.equals(rental.rentalId) }
+        listRental.add(rental)
+    }
 }

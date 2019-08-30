@@ -6,4 +6,5 @@ interface RepositoryFilm {
     fun addFilm(film: Film)
     fun getAllFilms(): List<Film>
     fun getFilmByFilmId(filmId: TypeId): Film
+    fun updateFilm(film: Film)
 }

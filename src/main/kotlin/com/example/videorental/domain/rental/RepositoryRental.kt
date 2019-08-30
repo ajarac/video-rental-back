@@ -5,4 +5,5 @@ import com.example.videorental.domain.shared.TypeId
 interface RepositoryRental {
     fun addRental(rental: Rental)
     fun getRentalByRentalId(rentalId: TypeId): Rental
+    fun updateRental(rental: Rental)
 }

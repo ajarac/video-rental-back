@@ -15,6 +15,7 @@ class RentalFilmUseCase(private val repositoryRental: RepositoryRental, private 
             throw FilmInUseException()
         } else {
             film.rentalFilm()
+            repositoryFilm.updateFilm(film)
             createRental(rentalFilmEvent)
         }
     }

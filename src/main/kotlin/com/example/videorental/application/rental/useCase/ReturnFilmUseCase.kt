@@ -21,10 +21,12 @@ class ReturnFilmUseCase(
 
         rental.filmReturn()
         rental.setPrice(film)
-
+        film.returnFilm()
         customer.getBonusPoints(film.typeFilm)
 
-        film.returnFilm()
+        repositoryRental.updateRental(rental)
+        repositoryFilm.updateFilm(film)
+        repositoryCustomer.updateCustomer(customer)
 
         return rental
     }

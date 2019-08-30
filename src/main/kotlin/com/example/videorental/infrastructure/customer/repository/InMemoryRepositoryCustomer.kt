@@ -20,6 +20,12 @@ class InMemoryRepositoryCustomer : RepositoryCustomer {
     }
 
     override fun getCustomerByCustomerId(customerId: TypeId): Customer {
-        return listCustomer.find { it.customerId.equals(customerId) } ?: throw ItemNotFoundException("Customer not found with customerId: $customerId")
+        return listCustomer.find { it.customerId.equals(customerId) }
+                ?: throw ItemNotFoundException("Customer not found with customerId: $customerId")
+    }
+
+    override fun updateCustomer(customer: Customer) {
+        listCustomer.removeIf { it.customerId.equals(customer.customerId) }
+        listCustomer.add(customer)
     }
 }
