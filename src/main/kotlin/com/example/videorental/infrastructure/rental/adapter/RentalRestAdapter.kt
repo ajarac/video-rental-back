@@ -8,12 +8,12 @@ import com.example.videorental.application.rental.useCase.RentalFilmUseCase
 import com.example.videorental.application.rental.useCase.ReturnFilmUseCase
 import com.example.videorental.domain.rental.Rental
 import com.example.videorental.domain.shared.TypeId
-import com.example.videorental.infrastructure.customer.repository.RepositoryCustomer
-import com.example.videorental.infrastructure.film.repository.RepositoryFilm
+import com.example.videorental.domain.customer.RepositoryCustomer
+import com.example.videorental.domain.film.RepositoryFilm
 import com.example.videorental.infrastructure.rental.controller.dto.RentalFilmDTO
 import com.example.videorental.infrastructure.rental.controller.dto.RentalResponseDTO
 import com.example.videorental.infrastructure.rental.controller.dto.ReturnFilmDTO
-import com.example.videorental.infrastructure.rental.repository.RepositoryRental
+import com.example.videorental.domain.rental.RepositoryRental
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Service
 

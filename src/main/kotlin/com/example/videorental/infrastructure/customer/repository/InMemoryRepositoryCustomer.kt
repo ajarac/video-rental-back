@@ -1,6 +1,7 @@
 package com.example.videorental.infrastructure.customer.repository
 
 import com.example.videorental.domain.customer.Customer
+import com.example.videorental.domain.customer.RepositoryCustomer
 import com.example.videorental.domain.shared.TypeId
 import com.example.videorental.infrastructure.shared.exception.ItemNotFoundException
 import org.springframework.stereotype.Repository

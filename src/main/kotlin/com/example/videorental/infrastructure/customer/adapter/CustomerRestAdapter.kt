@@ -6,7 +6,7 @@ import com.example.videorental.application.customer.useCase.GetAllCustomersUseCa
 import com.example.videorental.domain.customer.Customer
 import com.example.videorental.infrastructure.customer.controller.dto.CustomerResponseDTO
 import com.example.videorental.infrastructure.customer.controller.dto.CreateCustomerDTO
-import com.example.videorental.infrastructure.customer.repository.RepositoryCustomer
+import com.example.videorental.domain.customer.RepositoryCustomer
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Service
 

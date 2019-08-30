@@ -1,7 +1,7 @@
 package com.example.videorental.application.film.useCase
 
 import com.example.videorental.domain.film.Film
-import com.example.videorental.infrastructure.film.repository.RepositoryFilm
+import com.example.videorental.domain.film.RepositoryFilm
 
 class GetAllFilmsUseCase(private val repositoryFilm: RepositoryFilm) {
 

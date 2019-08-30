@@ -1,6 +1,5 @@
-package com.example.videorental.infrastructure.customer.repository
+package com.example.videorental.domain.customer
 
-import com.example.videorental.domain.customer.Customer
 import com.example.videorental.domain.shared.TypeId
 
 interface RepositoryCustomer {

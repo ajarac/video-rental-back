@@ -1,6 +1,5 @@
-package com.example.videorental.infrastructure.film.repository
+package com.example.videorental.domain.film
 
-import com.example.videorental.domain.film.Film
 import com.example.videorental.domain.shared.TypeId
 
 interface RepositoryFilm {

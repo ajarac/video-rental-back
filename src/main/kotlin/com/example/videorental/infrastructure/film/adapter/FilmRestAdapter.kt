@@ -12,7 +12,7 @@ import com.example.videorental.infrastructure.film.controller.dto.CalculatePrice
 import com.example.videorental.infrastructure.film.controller.dto.FilmResponseDTO
 import com.example.videorental.infrastructure.film.controller.dto.CreateFilmDTO
 import com.example.videorental.infrastructure.film.controller.dto.PriceRentalFilmResponseDTO
-import com.example.videorental.infrastructure.film.repository.RepositoryFilm
+import com.example.videorental.domain.film.RepositoryFilm
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Service
 

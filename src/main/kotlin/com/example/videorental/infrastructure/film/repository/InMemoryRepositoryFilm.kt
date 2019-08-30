@@ -1,6 +1,7 @@
 package com.example.videorental.infrastructure.film.repository
 
 import com.example.videorental.domain.film.Film
+import com.example.videorental.domain.film.RepositoryFilm
 import com.example.videorental.domain.shared.TypeId
 import com.example.videorental.infrastructure.shared.exception.ItemNotFoundException
 import org.springframework.stereotype.Repository
